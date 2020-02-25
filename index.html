@@ -62,12 +62,34 @@
       background-color: #006341;
     }
     #pic1{
-      width: 100%;
+      max-width: 80%;
+      text-align: center;
+      max-height: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .sectionOneText{
-      /*vertical-align: -50%;*/
       text-align: center;
       font-size: 23px;
+      font-family: "monospace";
+    }
+    .sectionTwoText{
+      text-align: center;
+      font-size: 23px;
+      font-family: "monospace";
+    }
+    #pic2{
+      max-width: 80%;
+      text-align: center;
+      max-height: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .headers{
+      font-family: "monospace";
+      text-align: center;
     }
 </style>
 <body>
@@ -84,10 +106,10 @@
      <div class="collapse navbar-collapse" id="siteNavbar">
        <ul class="navbar-nav">
          <li class="nav-item">
-           <a class="nav-link" href="#">Home</a>
+           <a class="nav-link" href="#home">Home</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">About</a>
+           <a class="nav-link" href="#about">About</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="#">Events</a>
@@ -101,7 +123,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center" id="background">
       <div class="col-lg-10" id="mainColumn">
-        <div class="row">
+        <div class="row" id="home">
           <div class="col-lg-12">
             <br />
             <h1 class="landingText">&lt;h1&gt;Hello World!&lt;/h1&gt;</h1>
@@ -112,16 +134,36 @@
           </div>
         </div>
         <br />
-        <br />
         <div class="row">
+          <div class="col-lg-12">
+            <h2 class="headers">Who We Are</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row" id="about">
           <div class="col-lg-6">
             <img src="image7.jpg" id="pic1">
           </div>
           <div class="col-lg-6">
-            <br/>
+            <br />
             <h5 class="sectionOneText">We are a meme friendly community that places an emphasis on community and learning.</h5>
             <h5 class="sectionOneText">We believe that no educational experience is complete without the development of a sense of community, and we strive to help foster a sense of belonging in our memebers.</h5>
-            <h5 class="sectionOneText"></h5>
+            <h5 class="sectionOneText">Our primary goal is to help our members land a job in the career field of their choice, and to have fun while doing it.</h5>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="headers">What We Do</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="image9.JPG" id="pic2">
+          </div>
+          <div class="col-lg-6">
+            <h5 class="sectionTwoText">We meet biweekly in Fenn hall to discuss various interesting topics about computer science and computer engineering. A staple of our events are home grown presentations, with our memebers giving talks about both topics that interest them, as well as topic which are useful to our community of students in setting them on a path for career success.</h5>
           </div>
         </div>
       </div>
