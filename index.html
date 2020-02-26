@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -6,6 +7,7 @@
 
   <title>CSU ACM</title>
 </head>
+<script src="https://kit.fontawesome.com/9f741993fe.js" crossorigin="anonymous"></script>
 <style>
     .navbar {
         background-color: #d97c27;
@@ -61,14 +63,6 @@
     #mainColumn{
       background-color: #006341;
     }
-    #pic1{
-      max-width: 80%;
-      text-align: center;
-      max-height: 80%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
     .sectionOneText{
       text-align: center;
       font-size: 23px;
@@ -79,17 +73,37 @@
       font-size: 23px;
       font-family: "monospace";
     }
-    #pic2{
-      max-width: 80%;
+    .headers{
+      font-family: "monospace";
       text-align: center;
-      max-height: 80%;
+    }
+    .pics{
+      max-width: 90%;
+      text-align: center;
+      max-height: 90%;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-    .headers{
+    #connect{
       font-family: "monospace";
       text-align: center;
+    }
+    #horns{
+      max-width: 60%;
+      text-align: center;
+      max-height: 60%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #footer{
+      background-color: #D9D9D9;
+    }
+    #footerText{
+      font-weight: bold;
+      text-align: center;
+      font-family: "monospace";
     }
 </style>
 <body>
@@ -112,10 +126,10 @@
            <a class="nav-link" href="#about">About</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Events</a>
+           <a class="nav-link" href="#events">Events</a>
          </li>
          <li class = "nav item">
-           <a class="nav-link" href="#">Contact</a>
+           <a class="nav-link" href="#contact">Contact</a>
          </li>
        </ul>
      </div>
@@ -136,13 +150,13 @@
         <br />
         <div class="row">
           <div class="col-lg-12">
-            <h2 class="headers">Who We Are</h2>
+            <h2 class="headers" id="about">Who We Are</h2>
           </div>
         </div>
         <br />
-        <div class="row" id="about">
+        <div class="row">
           <div class="col-lg-6">
-            <img src="image7.jpg" id="pic1">
+            <img src="image7.jpg" class="pics">
           </div>
           <div class="col-lg-6">
             <br />
@@ -160,19 +174,72 @@
         <br />
         <div class="row">
           <div class="col-lg-6">
-            <img src="image9.JPG" id="pic2">
+            <img src="image9.JPG" class="pics">
           </div>
           <div class="col-lg-6">
             <h5 class="sectionTwoText">We meet biweekly in Fenn hall to discuss various interesting topics about computer science and computer engineering. A staple of our events are home grown presentations, with our memebers giving talks about both topics that interest them, as well as topic which are useful to our community of students in setting them on a path for career success.</h5>
+            <h5 class="sectionTwoText">Meetings feature free food and drinks, and informative presentations by our members about topics relating to computer science. All members are welcome to present!</h5>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="headers" id="events">Events</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="headers">Place holder for where the calendar is going to go</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="headers" id=contact>Join Us!</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="image10.jpg" class="pics">
+          </div>
+          <div class="col-lg-6">
+            <br />
+            <div class="col-lg-12">
+              <h3 id="connect">Connect with us and come chat with us on discord!</h3>
+              <br />
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <center><a href="https://discord.gg/YyyR3q5"><i class="fab fa-discord fa-10x"></i></a></center>
+                </div>
+                <div class="col-lg-6">
+                  <center><a href="google.com"><img src="vikinghornsbad.jpg" id="horns"></a></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" id="footer">
+            <p id="footerText">Cleveland State Association of Computing Machinery &#169;CSU ACM 2019</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script language="javascript">
-  </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script language = "javascript">
+  $(document).ready(function(){
+    var d = new Date();
+    var n = d.getFullYear();
+    $("#footerText").html("Cleveland State Association of Computing Machinery" + &#169; + n + "CSU ACM");
+  });
+
+</script>
 </html>
